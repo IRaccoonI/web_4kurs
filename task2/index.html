@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header,
+      .menu,
+      .content,
+      .footer {
+        border: 1px solid black;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        height: 150px;
+      }
+
+      .mainWrapper {
+        min-height: 400px;
+        display: flex;
+        flex-grow: 1;
+      }
+
+      .menu {
+        height: 300px;
+        width: 200px;
+      }
+
+      .content {
+        min-height: 400px;
+        flex-grow: 1;
+        align-self: stretch;
+      }
+
+      .footer {
+        height: 150px;
+      }
+
+      /* print */
+      @media print {
+        .header,
+        .menu,
+        .footer {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">header</div>
+    <div class="mainWrapper">
+      <div class="menu">menu</div>
+      <div class="content">content</div>
+    </div>
+    <div class="footer">footer</div>
+  </body>
+</html>

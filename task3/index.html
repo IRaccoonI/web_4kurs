@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "AlexBrush";
+        src: url("./fonts/AlexBrush-Regular.ttf");
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto";
+        color: rgb(32, 19, 1);
+      }
+
+      body > * {
+        flex-basis: 0;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        font-style: italic;
+        font-weight: 400;
+
+        margin-bottom: 4px;
+      }
+
+      span,
+      p {
+        color: rgb(87, 86, 86);
+      }
+
+      .d-none {
+        display: none;
+      }
+
+      .flexWidthAuto {
+        display: flex;
+      }
+
+      .flexWidthAuto > * {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+
+      @media (max-width: 900px) {
+        .mdFlexDirectionRow {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          font-size: 14px;
+        }
+      }
+
+      article {
+        flex-grow: 1;
+      }
+
+      header {
+        padding: 48px 32px 0 32px;
+      }
+
+      header .logo img {
+        width: min(500px, 100%);
+        margin: auto;
+        display: block;
+      }
+
+      nav {
+        margin-top: 32px;
+      }
+
+      nav ul {
+        background-color: rgb(175, 116, 38);
+        list-style: none;
+      }
+
+      nav ul li {
+        padding: 16px;
+        text-align: center;
+        transition: background-color 0.1s linear;
+      }
+
+      nav ul li:hover {
+        background-color: rgb(179, 125, 56);
+      }
+
+      nav ul a {
+        text-decoration: none;
+        color: white;
+      }
+
+      article::before {
+        content: "";
+        position: absolute;
+        background-color: rgb(230, 230, 230);
+        height: 8px;
+        top: -8px;
+        right: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      article {
+        position: relative;
+        background-color: rgb(230, 230, 230);
+        padding: 32px;
+      }
+
+      .storyWrapper {
+        display: flex;
+        column-gap: 48px;
+        row-gap: 24px;
+      }
+
+      .story {
+        flex-grow: 1;
+      }
+
+      .dedImage {
+        width: min(480px, 100%);
+      }
+
+      .dedImage img {
+        border: 1px solid rgb(211, 211, 211);
+      }
+
+      .splitter {
+        height: 1px;
+        width: 100%;
+        background-color: gray;
+        margin: 32px 0;
+      }
+
+      .aboutWrapper {
+        gap: 32px;
+      }
+
+      footer {
+        padding: 0 32px 32px 32px;
+        background-color: rgb(230, 230, 230);
+      }
+
+      footer .footerContent {
+        border-top: 4px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="./logo.png" alt="logo" /></div>
+      <nav>
+        <ul class="flexWidthAuto mdFlexDirectionRow">
+          <li>
+            <a href=""> HORNS STORAGE </a>
+          </li>
+          <li>
+            <a href=""> HOOVES STORAGE </a>
+          </li>
+          <li>
+            <a href=""> OUR ACHIEVEMENTS </a>
+          </li>
+          <li>
+            <a href=""> SEASON PRICES </a>
+          </li>
+          <li>
+            <a href=""> CONTACTS </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <h1 class="d-none">Istoriya o dede Ivane</h1>
+      <div class="storyWrapper mdFlexDirectionRow">
+        <div class="story header">
+          <h2>Our history</h2>
+          <span
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repellendus quasi repellat laborum blanditiis facilis vitae possimus
+            nemo fuga dicta voluptas labore obcaecati accusamus eveniet earum,
+            nam velit praesentium deserunt temporibus voluptatum. Dolor nisi nam
+            neque doloribus suscipit quia numquam, ab aut, aliquam quibusdam
+            adipisci aliquid esse dicta accusamus unde est facere! Nisi culpa,
+            doloremque delectus assumenda, perferendis dolores sed aspernatur
+            est, distinctio veniam soluta autem possimus deserunt sapiente
+            eveniet atque vitae illo voluptates ex sit explicabo tempora.
+            Voluptatum, deserunt totam voluptates aut at laudantium quo unde.
+            Nulla cum ipsum optio? Veniam fugiat, quaerat, rem eveniet est modi
+            dicta neque asperiores cupiditate voluptates possimus ipsa porro
+            voluptatibus ullam dolor odit voluptatum?</span
+          >
+        </div>
+        <div class="dedImage">
+          <img src="./dedFace.png" alt="" />
+        </div>
+      </div>
+      <div class="splitter"></div>
+      <div class="aboutWrapper flexWidthAuto mdFlexDirectionRow">
+        <div class="horns">
+          <h2>Horns</h2>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            architecto molestias eum excepturi, blanditiis ex sapiente? Officia,
+            suscipit ipsa eius maxime asperiores aliquam architecto vero qui.
+            Esse, iste cupiditate nesciunt aspernatur assumenda ipsa illum,
+            voluptatibus, exercitationem officiis in ut dolorem eaque fuga iusto
+            deserunt totam quis perferendis sequi hic. Officiis dolor vero
+            adipisci! Eveniet magnam magni in qui atque quisquam voluptatem,
+            minima facere dolore quae.
+          </span>
+        </div>
+        <div class="hooves">
+          <h2>Hooves</h2>
+          <span
+            >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus et adipisci deserunt praesentium! Ad quasi unde non
+            quisquam. Recusandae aperiam, aliquam perspiciatis amet, saepe enim
+            veniam doloribus sunt ipsam suscipit tempora! Ipsum, consequatur
+            voluptas eius nulla rerum ducimus reprehenderit adipisci, ullam
+            aliquid recusandae sunt distinctio nostrum tempore non vitae
+            inventore, velit exercitationem aut saepe numquam aperiam ex cumque.
+            Saepe corporis omnis, fugit repellendus corrupti architecto!</span
+          >
+        </div>
+        <div class="achievement">
+          <h2>Achievements</h2>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            laborum ducimus nostrum animi assumenda! Facilis est animi rerum
+            hic, laudantium qui ipsam deserunt sapiente sequi et sunt ab,
+            reiciendis delectus totam expedita blanditiis accusantium fugiat
+            illo dolores cupiditate debitis deleniti recusandae dignissimos
+            illum! In, ratione hic ut quasi saepe nemo harum, quas atque
+            corporis quis sunt sint quae iste iusto, accusantium autem maxime?
+            Quis, impedit?</span
+          >
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="footerContent">
+        <h2>Roga & Kopyta</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+      </div>
+    </footer>
+  </body>
+</html>
