@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Kievit-Black';
+  src: url('../fonts/Kievit_Black.ttf') format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Kievit-Bold';
+  src: url('../fonts/Kievit_Bold.ttf') format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Kievit-Book';
+  src: url('../fonts/Kievit_Book.ttf') format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'DINMittelschriftStd';
+  src: url('../fonts/DINMittelschriftStd.otf') format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'AauxPro-MediumItalic';
+  src: url('../fonts/AauxPro-MediumItalic.ttf') format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GothamRnd-Medium';
+  src: url('../fonts/GothamRnd-Medium.otf') format("opentype");
+  font-weight: normal;
+}
