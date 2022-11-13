@@ -1,6 +1,10 @@
 
 
 @media (max-width:1400px) {
+  html {
+    font-size: 14px;
+  }
+  
 	.guys {
 		display: none;
 	}
@@ -32,6 +36,9 @@
 }
 
 @media (max-width:970px) {
+  html {
+    font-size: 12px;
+  }
 
 	.search {
 		align-items: center;
@@ -90,6 +97,9 @@
 }
 
 @media(max-width:670px) {
+  html {
+    font-size: 10px;
+  }
 
 	.header-top {
 		column-gap: 30px;
